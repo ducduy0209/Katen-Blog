@@ -1,0 +1,163 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: rgb(0, 0, 0, 0.6);
+    --primary-color: #FE4F70;
+    --border-color: #EBEBEB;
+    --second-color: #203656;
+    --color-btn: linear-gradient(to right, rgb(254, 79, 112) 0%, rgb(255, 163, 135) 51%, rgb(254, 79, 112) 100%) 0% 0% / 200%;
+}
+
+* {
+    box-sizing: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+::-moz-selection {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+::selection {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: linear-gradient(to top, rgb(254, 79, 112) 0%, rgb(255, 163, 135) 51%, rgb(254, 79, 112) 100%) 0% 0% / 200%;
+    ;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.ml16 {
+    margin-left: 16px;
+}
+
+.ml12 {
+    margin-left: 12px;
+}
+
+.mt24 {
+    margin-top: 24px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.btn {
+    border-radius: 26px;
+    border: none;
+}
+
+.btn-cricle {
+    border-radius: 50%;
+    background: var(--color-btn);
+    border: none;
+}
+
+.btn-default {
+    border-radius: 26px;
+    background: var(--color-btn);
+    border: none;
+}
+
+.btn-cricle:hover,
+.btn-default:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+    background-position: right center;
+}
+
+.box-shadow {
+    box-shadow: 0 6px 16px rgb(0, 0, 0, 0.2);
+}
+
+.pd30 {
+    padding: 30px;
+}
+
+.pt48 {
+    padding-top: 48px;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.text-hover:hover {
+    color: var(--primary-color);
+}
+
+.setupRight {
+    border: solid 1px #EBEBEB;
+    padding: 35px 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* Loading */
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader-container.active {
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader-container img {
+    height: 100px;
+}

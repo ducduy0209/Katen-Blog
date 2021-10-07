@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katen - Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/image/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loading -->
+    <div class="loader-container">
+        <img src="./assets/image/Loader.gif" alt="Loading">
+    </div>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <nav class="header__navbar">
+                <div class="grid wide header__navbar-wrapper">
+                    <a href="#" class="header__navbar-logo">
+                        <img src="./assets/image/logo.svg" alt="Logo">
+                    </a>
+                    <ul class="header__navbar-list-pages hideOnTablet-Mobile">
+                        <li class="header__navbar-page">
+                            <a href="#" class="header__navbar-page-link active">
+                                Home
+                                <i class="fal fa-chevron-down"></i>
+                            </a>
+                            <ul class="header__navbar-submenu box-shadow">
+                                <li class="header__navbar-submenu-item">
+                                    <a href="#">Magazine</a>
+                                </li>
+                                <li class="header__navbar-submenu-item">
+                                    <a href="#">Personal</a>
+                                </li>
+                                <li class="header__navbar-submenu-item">
+                                    <a href="#">Personal Alt</a>
+                                </li>
+                                <li class="header__navbar-submenu-item">
+                                    <a href="#">Minial</a>
+                                </li>
+                                <li class="header__navbar-submenu-item">
+                                    <a href="#">Classic</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__navbar-page">
+                            <a href="#" class="header__navbar-page-link">Lifestyle</a>
+                        </li>
+                        <li class="header__navbar-page">
+                            <a href="#" class="header__navbar-page-link">Inspiration</a>
+                        </li>
+                        <li class="header__navbar-page">
+                            <a href="#" class="header__navbar-page-link">
+                                Pages
+                                <i class="fal fa-chevron-down"></i>
+                            </a>
+                            <ul class="header__navbar-submenu-1 box-shadow">
+                                <li class="header__navbar-submenu-item">
+                                    <a href="#">Category</a>
+                                </li>
+                                <li class="header__navbar-submenu-item">
+                                    <a href="#">Blog Single</a>
+                                </li>
+                                <li class="header__navbar-submenu-item">
+                                    <a href="#">Blog Single Alt</a>
+                                </li>
+                                <li class="header__navbar-submenu-item">
+                                    <a href="#">About</a>
+                                </li>
+                                <li class="header__navbar-submenu-item">
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__navbar-page">
+                            <a href="#" class="header__navbar-page-link">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="header__navbar-right">
+                        <ul class="list-socials hidePro hideOnTablet-Mobile">
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="header__navbar-buttons">
+                            <button class="btn-cricle ">
+                                <i class="header__navbar-button-icon far fa-search"></i>
+                            </button>
+                            <button class="btn-cricle ml16">
+                                <i class="header__navbar-button-icon fal fa-bars"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Search popup -->
+                <div class="header__search--popup">
+                    <i class="header__search-close-btn fal fa-times"></i>
+                    <div class="header__search-content">
+                        <h3>Press ESC to close</h3>
+                        <form class="search-form">
+                            <input type="search" placeholder="Search and press enter . . ." name="" id="">
+                            <button typr="submit" class="header__search--popup-btn btn-default">
+                                <i class="far fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Menu slideOut -->
+                <div class="header__menu--slideOut">
+                    <div class="menu-slideOut__overlay"></div>
+                    <div class="menu-slideOut__content-wrap box-shadow">
+                        <div class="menu-slideOut__content">
+                            <i class="menu-slideOut__btn--close fal fa-times"></i>
+                            <div class="menu-slideOut__logo">
+                                <img src="./assets/image/logo.svg" alt="logo">
+                            </div>
+                            <nav>
+                                <ul class="">
+                                    <li class="menu-slideOut__item">
+                                        <a href="#" class="menu-slideOut__item-link active">
+                                            Home
+                                            <i class="menu-slideOut__icon-down-1 fal fa-angle-down"></i>
+                                        </a>
+                                        <ul class="menu-slideOut__submenu">
+                                            <li class="menu-slideOut__submenu-item">
+                                                <a href="#">Magazine</a>
+                                            </li>
+                                            <li class="menu-slideOut__submenu-item">
+                                                <a href="#">Personal</a>
+                                            </li>
+                                            <li class="menu-slideOut__submenu-item">
+                                                <a href="#">Personal Alt</a>
+                                            </li>
+                                            <li class="menu-slideOut__submenu-item">
+                                                <a href="#">Minial</a>
+                                            </li>
+                                            <li class="menu-slideOut__submenu-item">
+                                                <a href="#">Classic</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-slideOut__item">
+                                        <a href="#" class="menu-slideOut__item-link">
+                                            Lifestyle
+                                        </a>
+                                    </li>
+                                    <li class="menu-slideOut__item">
+                                        <a href="#" class="menu-slideOut__item-link">
+                                            Inspiration
+                                        </a>
+                                    </li>
+                                    <li class="menu-slideOut__item">
+                                        <a href="#" class="menu-slideOut__item-link">
+                                            Pages
+                                            <i class="menu-slideOut__icon-down-2 fal fa-angle-down"></i>
+                                        </a>
+                                        <ul class="menu-slideOut__submenu-1">
+                                            <li class="menu-slideOut__submenu-item">
+                                                <a href="#">Category</a>
+                                            </li>
+                                            <li class="menu-slideOut__submenu-item">
+                                                <a href="#">Blog Single</a>
+                                            </li>
+                                            <li class="menu-slideOut__submenu-item">
+                                                <a href="#">Blog Single Alt</a>
+                                            </li>
+                                            <li class="menu-slideOut__submenu-item">
+                                                <a href="#">About</a>
+                                            </li>
+                                            <li class="menu-slideOut__submenu-item">
+                                                <a href="#">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-slideOut__item">
+                                        <a href="#" class="menu-slideOut__item-link">
+                                            contact
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="menu-slideOut__socials">
+                                <ul class="list-socials">
+                                    <li class="social-item">
+                                        <a href="#" class="social-link">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="#" class="social-link">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="#" class="social-link">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="#" class="social-link">
+                                            <i class="fab fa-pinterest-p"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="#" class="social-link">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="#" class="social-link">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- container -->
+        <div class="container">
+            <div class="grid wide">
+                <!-- Intro -->
+                <div class="row container__intro">
+                    <div class="col l-8 m-12 c-12 container__intro-left">
+                        <div class="container__intro-left-img box-shadow">
+                            <img src="./assets/image/featured-lg.jpg" alt="intro-img">
+                        </div>
+                        <div class="container__intro-left-content">
+                            <div class="btn-default">
+                                <a href="#">
+                                    Inspiration
+                                </a>
+                            </div>
+                            <h1 class="container__intro-left-title">
+                                <a href="#">5 Easy Ways You Can Turn Future Into Success</a>
+                            </h1>
+                            <ul>
+                                <li class="container__intro-left-item">
+                                    <a href="#">Katen Doe</a>
+                                    <span></span>
+                                </li>
+                                <li class="container__intro-left-date">
+                                    39 March 2021
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-12 c-12 mt_24 mt-28">
+                        <div class="container__intro-right">
+                            <div class="container__intro-right-btns">
+                                <button class="btn active">Popular</button>
+                                <button class="btn ml12">Recent</button>
+                            </div>
+                            <div class="container__intro-right-content popular mt24">
+                                <span class="container__intro-right-overlay"></span>
+                                <div class="container__intro-right--loading">
+                                    <img src="./assets/image/Loader.gif" alt="Loading">
+                                </div>
+                                <div style="margin-top: 0;" class="container__intro-right-item">
+                                    <a href="#" class="container__intro-right-img">
+                                        <img src="./assets/image/tabs-1.jpg" alt="">
+                                    </a>
+                                    <div class="container__intro-right-item-info">
+                                        <h2 class="container__intro-right-title">
+                                            <a class="text-hover" href="#">3 Easy Ways To Make Your iPhone Faster</a>
+                                        </h2>
+                                        <span>29 March 2021</span>
+                                    </div>
+                                </div>
+                                <div class="container__intro-right-item">
+                                    <a href="#" class="container__intro-right-img">
+                                        <img src="./assets/image/tabs-2.jpg" alt="">
+                                    </a>
+                                    <div class="container__intro-right-item-info">
+                                        <h2 class="container__intro-right-title">
+                                            <a class="text-hover" href="#">An Incredibly Easy Method That Works For All</a>
+                                        </h2>
+                                        <span>29 March 2021</span>
+                                    </div>
+                                </div>
+                                <div class="container__intro-right-item">
+                                    <a href="#" class="container__intro-right-img">
+                                        <img src="./assets/image/tabs-3.jpg" alt="">
+                                    </a>
+                                    <div class="container__intro-right-item-info">
+                                        <h2 class="container__intro-right-title">
+                                            <a class="text-hover" href="#">10 Ways To Immediately Start Selling Furniture</a>
+                                        </h2>
+                                        <span>29 March 2021</span>
+                                    </div>
+                                </div>
+                                <div class="container__intro-right-item">
+                                    <a href="#" class="container__intro-right-img">
+                                        <img src="./assets/image/tabs-4.jpg" alt="">
+                                    </a>
+                                    <div class="container__intro-right-item-info">
+                                        <h2 class="container__intro-right-title">
+                                            <a class="text-hover" href="#">15 Unheard Ways To Achieve Greater Walker</a>
+                                        </h2>
+                                        <span>29 March 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container__intro-right-content recent mt24">
+                                <span class="container__intro-right-overlay"></span>
+                                <div class="container__intro-right--loading">
+                                    <img src="./assets/image/Loader.gif" alt="Loading">
+                                </div>
+                                <div style="margin-top: 0;" class="container__intro-right-item">
+                                    <a href="#" class="container__intro-right-img">
+                                        <img src="./assets/image/tabs-4.jpg" alt="">
+                                    </a>
+                                    <div class="container__intro-right-item-info">
+                                        <h2 class="container__intro-right-title">
+                                            <a class="text-hover" href="#">15 Unheard Ways To Achieve Greater Walker</a>
+                                        </h2>
+                                        <span>29 March 2021</span>
+                                    </div>
+                                </div>
+                                <div class="container__intro-right-item">
+                                    <a href="#" class="container__intro-right-img">
+                                        <img src="./assets/image/tabs-3.jpg" alt="">
+                                    </a>
+                                    <div class="container__intro-right-item-info">
+                                        <h2 class="container__intro-right-title">
+                                            <a class="text-hover" href="#">10 Ways To Immediately Start Selling Furniture</a>
+                                        </h2>
+                                        <span>29 March 2021</span>
+                                    </div>
+                                </div>
+                                <div class="container__intro-right-item">
+                                    <a href="#" class="container__intro-right-img">
+                                        <img src="./assets/image/tabs-2.jpg" alt="">
+                                    </a>
+                                    <div class="container__intro-right-item-info">
+                                        <h2 class="container__intro-right-title">
+                                            <a class="text-hover" href="#">An Incredibly Easy Method That Works For All</a>
+                                        </h2>
+                                        <span>29 March 2021</span>
+                                    </div>
+                                </div>
+                                <div class="container__intro-right-item">
+                                    <a href="#" class="container__intro-right-img">
+                                        <img src="./assets/image/tabs-1.jpg" alt="">
+                                    </a>
+                                    <div class="container__intro-right-item-info">
+                                        <h2 class="container__intro-right-title">
+                                            <a class="text-hover" href="#">3 Easy Ways To Make Your iPhone Faster</a>
+                                        </h2>
+                                        <span>29 March 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="row container__content">
+                    <!-- Left -->
+                    <div class="col l-8 m-12 c-12 container__content-left-wrapper">
+                        <div class="container-left__editor">
+                            <h3>Editor’s Pick</h3>
+                            <img src="./assets/image/wave.svg" alt="">
+                        </div>
+                        <!-- posts editor -->
+                        <div class="container-left__posts pd30">
+                            <div class="row">
+                                <div class="col l-6 m-6 c-12 container-left__posts-left">
+                                    <div class="container-left__posts-left-img">
+                                        <a href="#" class="container-left__posts-left-img-link">
+                                            <img src="./assets/image/editor-lg.jpg" alt="">
+                                        </a>
+                                        <div class="btn-default">
+                                            <a href="#">Lifestyle</a>
+                                        </div>
+                                        <span class="btn-cricle">
+                                            <i class="fal fa-image"></i>
+                                        </span>
+                                    </div>
+                                    <ul class="container-left__posts-info">
+                                        <li class="container-left__posts-info-item">
+                                            <a href="#">
+                                                <img src="./assets/image/author-sm.png" alt=""> Katen Doe
+                                            </a>
+                                            <span></span>
+                                        </li>
+                                        <li class="container-left__posts-info-item">
+                                            29 March 2021
+                                        </li>
+                                    </ul>
+
+                                    <h2 class="container-left__posts-title">
+                                        <a class="text-hover" href="#">
+                                            15 Unheard Ways To Achieve Greater Walker
+                                        </a>
+                                    </h2>
+                                    <p class="container-left__posts-desc">
+                                        A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy.
+                                    </p>
+                                </div>
+                                <div class="col l-6 m-6 c-12 container-left__posts-right">
+                                    <div class="container-left__posts-right-item-wrapper mt-24">
+                                        <div class="container-left__posts-right-item">
+                                            <a class="container-left__posts-right-img-link" href="#">
+                                                <div class="container-left__posts-right-img">
+                                                    <img src="./assets/image/editor-sm-1.jpg" alt="">
+                                                </div>
+                                            </a>
+                                            <div class="container-left__posts-right-item-content">
+                                                <a class="text-hover" href="#">3 Easy Ways To Make Your iPhone Faster</a>
+                                                <span>29 March 2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container-left__posts-right-item-wrapper">
+                                        <div class="container-left__posts-right-item">
+                                            <a class="container-left__posts-right-img-link" href="#">
+                                                <div class="container-left__posts-right-img">
+                                                    <img src="./assets/image/editor-sm-2.jpg" alt="">
+                                                </div>
+                                            </a>
+                                            <div class="container-left__posts-right-item-content">
+                                                <a class="text-hover" href="#">An Incredibly Easy Method That Works For All</a>
+                                                <span>29 March 2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container-left__posts-right-item-wrapper">
+                                        <div class="container-left__posts-right-item">
+                                            <a class="container-left__posts-right-img-link" href="#">
+                                                <div class="container-left__posts-right-img">
+                                                    <img src="./assets/image/editor-sm-3.jpg" alt="">
+                                                </div>
+                                            </a>
+                                            <div class="container-left__posts-right-item-content">
+                                                <a class="text-hover" href="#">
+                                                    10 Ways To Immediately Start Selling Furniture</a>
+                                                <span>29 March 2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container-left__posts-right-item-wrapper">
+                                        <div class="container-left__posts-right-item">
+                                            <a class="container-left__posts-right-img-link" href="#">
+                                                <div class="container-left__posts-right-img">
+                                                    <img src="./assets/image/editor-sm-4.jpg" alt="">
+                                                </div>
+                                            </a>
+                                            <div class="container-left__posts-right-item-content">
+                                                <a class="text-hover" href="#">15 Unheard Ways To Achieve Greater Walker</a>
+                                                <span>29 March 2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- box ads -->
+                        <div class="container-left__box-ads pt48">
+                            <span>- SPONSORED AD -</span>
+                            <a class="container-left__ads-link" href="#">
+                                <img src="./assets/image/ad-750.png" alt="">
+                            </a>
+                        </div>
+
+                        <!-- Trending  -->
+                        <div class="container-left__trending">
+                            <h3>Trending</h3>
+                            <img src="./assets/image/wave.svg" alt="">
+                        </div>
+
+                        <div class="container-trending__wrapper pd30">
+                            <div class="row">
+                                <div class="col l-6 m-6 c-12 container-left__posts-left">
+                                    <div class="container-left__posts-left-img">
+                                        <a href="#" class="container-left__posts-left-img-link">
+                                            <img src="./assets/image/trending-lg-1.jpg" alt="">
+                                        </a>
+                                        <div class="btn-default">
+                                            <a href="#">Lifestyle</a>
+                                        </div>
+                                        <span class="btn-cricle">
+                                            <i class="fal fa-image"></i>
+                                        </span>
+                                    </div>
+                                    <ul class="container-left__posts-info">
+                                        <li class="container-left__posts-info-item">
+                                            <a href="#">
+                                                <img src="./assets/image/author-sm.png" alt=""> Katen Doe
+                                            </a>
+                                            <span></span>
+                                        </li>
+                                        <li class="container-left__posts-info-item">
+                                            29 March 2021
+                                        </li>
+                                    </ul>
+
+                                    <h2 class="container-left__posts-title">
+                                        <a class="text-hover" href="#">
+                                            15 Unheard Ways To Achieve Greater Walker
+                                        </a>
+                                    </h2>
+                                    <p class="container-left__posts-desc">
+                                        A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy.
+                                    </p>
+                                    <div class="container-left__posts-right-item-wrapper pt48">
+                                        <div class="container-left__posts-right-item">
+                                            <a class="container-left__posts-right-img-link" href="#">
+                                                <div class="container-left__posts-right-img">
+                                                    <img src="./assets/image/editor-sm-1.jpg" alt="">
+                                                </div>
+                                            </a>
+                                            <div class="container-left__posts-right-item-content">
+                                                <a class="text-hover" href="#">3 Easy Ways To Make Your iPhone Faster</a>
+                                                <span>29 March 2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container-left__posts-right-item-wrapper">
+                                        <div class="container-left__posts-right-item">
+                                            <a class="container-left__posts-right-img-link" href="#">
+                                                <div class="container-left__posts-right-img">
+                                                    <img src="./assets/image/editor-sm-2.jpg" alt="">
+                                                </div>
+                                            </a>
+                                            <div class="container-left__posts-right-item-content">
+                                                <a class="text-hover" href="#">An Incredibly Easy Method That Works For All</a>
+                                                <span>29 March 2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-6 c-12 container-left__posts-left mt-24">
+                                    <div class="container-left__posts-left-img">
+                                        <a href="#" class="container-left__posts-left-img-link">
+                                            <img src="./assets/image/trending-lg-2.jpg" alt="">
+                                        </a>
+                                        <div class="btn-default">
+                                            <a href="#">Lifestyle</a>
+                                        </div>
+                                        <span class="btn-cricle">
+                                            <i class="fal fa-image"></i>
+                                        </span>
+                                    </div>
+                                    <ul class="container-left__posts-info">
+                                        <li class="container-left__posts-info-item">
+                                            <a href="#">
+                                                <img src="./assets/image/author-sm.png" alt=""> Katen Doe
+                                            </a>
+                                            <span></span>
+                                        </li>
+                                        <li class="container-left__posts-info-item">
+                                            29 March 2021
+                                        </li>
+                                    </ul>
+
+                                    <h2 class="container-left__posts-title">
+                                        <a class="text-hover" href="#">
+                                            15 Unheard Ways To Achieve Greater Walker
+                                        </a>
+                                    </h2>
+                                    <p class="container-left__posts-desc">
+                                        A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy.
+                                    </p>
+                                    <div class="container-left__posts-right-item-wrapper pt48">
+                                        <div class="container-left__posts-right-item">
+                                            <a class="container-left__posts-right-img-link" href="#">
+                                                <div class="container-left__posts-right-img">
+                                                    <img src="./assets/image/editor-sm-3.jpg" alt="">
+                                                </div>
+                                            </a>
+                                            <div class="container-left__posts-right-item-content">
+                                                <a class="text-hover" href="#">
+                                                    10 Ways To Immediately Start Selling Furniture</a>
+                                                <span>29 March 2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container-left__posts-right-item-wrapper">
+                                        <div class="container-left__posts-right-item">
+                                            <a class="container-left__posts-right-img-link" href="#">
+                                                <div class="container-left__posts-right-img">
+                                                    <img src="./assets/image/editor-sm-4.jpg" alt="">
+                                                </div>
+                                            </a>
+                                            <div class="container-left__posts-right-item-content">
+                                                <a class="text-hover" href="#">15 Unheard Ways To Achieve Greater Walker</a>
+                                                <span>29 March 2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Inspiration -->
+                        <div class="container-left__inspiration">
+                            <h3>Inspiration</h3>
+                            <img src="./assets/image/wave.svg" alt="">
+                        </div>
+
+                        <div class="container-inspiration__wrapper">
+                            <div class="row">
+                                <div class="col l-6 m-6 c-12 container__inspiration">
+                                    <div class="container__inspiration-img">
+                                        <img src="./assets/image/inspiration-1.jpg" alt="intro-img">
+                                    </div>
+                                    <div class="container__inspiration-content">
+                                        <div class="btn-default">
+                                            <a href="#">
+                                                Inspiration
+                                            </a>
+                                        </div>
+                                        <h1 class="container__inspiration-title">
+                                            <a href="#">5 Easy Ways You Can Turn Future Into Success</a>
+                                        </h1>
+                                        <ul>
+                                            <li class="container__inspiration-item">
+                                                <a href="#">Katen Doe</a>
+                                                <span></span>
+                                            </li>
+                                            <li class="container__inspiration-date">
+                                                39 March 2021
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-6 c-12 container__inspiration mt-24">
+                                    <div class="container__inspiration-img">
+                                        <img src="./assets/image/inspiration-2.jpg" alt="intro-img">
+                                    </div>
+                                    <div class="container__inspiration-content">
+                                        <div class="btn-default">
+                                            <a href="#">
+                                                Inspiration
+                                            </a>
+                                        </div>
+                                        <h1 class="container__inspiration-title">
+                                            <a href="#">5 Easy Ways You Can Turn Future Into Success</a>
+                                        </h1>
+                                        <ul>
+                                            <li class="container__inspiration-item">
+                                                <a href="#">Katen Doe</a>
+                                                <span></span>
+                                            </li>
+                                            <li class="container__inspiration-date">
+                                                39 March 2021
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Lastest Posts -->
+                        <div class="container-left__posts--lastest mt50">
+                            <h3>Latest Posts</h3>
+                            <img src="./assets/image/wave.svg" alt="">
+                        </div>
+
+                        <div class="container-lastest__posts-wrapper pd30">
+                            <div class="row">
+                                <div class="col l-12 c-12 container-lastest__post-item-wrap">
+                                    <div class="container-lastest__post-item">
+                                        <div class="container-lastest__posts-img">
+                                            <span>
+                                                <i class="btn-cricle fal fa-image"></i>
+                                            </span>
+                                            <a href="#" class="container-lastest__posts-img-link">
+                                                <div>
+                                                    <img src="./assets/image/latest-sm-1.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="container-lastest__posts-content">
+                                            <ul class="mt-24">
+                                                <li class="container-lastest__post-desc">
+                                                    <img src="./assets/image/author-sm.png" alt="">
+                                                    <a class="text-hover" href="#">
+                                                        Katen Doe
+                                                    </a>
+                                                </li>
+                                                <li class="container-lastest__post-desc">
+                                                    <a class="text-hover" href="#">
+                                                        Trending
+                                                    </a>
+                                                </li>
+                                                <li class="container-lastest__post-desc">
+                                                    29 March 2021
+                                                </li>
+                                            </ul>
+                                            <h3 class="text-hover">The Next 60 Things To Immediately Do About Building</h3>
+                                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings.</p>
+                                            <div class="container-lastest__post-icons">
+                                                <i class="text-hover fal fa-share-alt"></i>
+                                                <i class="text-hover fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-12 c-12 container-lastest__post-item-wrap">
+                                    <div class="container-lastest__post-item">
+                                        <div class="container-lastest__posts-img">
+                                            <span>
+                                                <i class="btn-cricle fal fa-image"></i>
+                                            </span>
+                                            <a href="#" class="container-lastest__posts-img-link">
+                                                <div>
+                                                    <img src="./assets/image/latest-sm-2.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="container-lastest__posts-content">
+                                            <ul class="mt-24">
+                                                <li class="container-lastest__post-desc">
+                                                    <img src="./assets/image/author-sm.png" alt="">
+                                                    <a class="text-hover" href="#">
+                                                        Katen Doe
+                                                    </a>
+                                                </li>
+                                                <li class="container-lastest__post-desc">
+                                                    <a class="text-hover" href="#">
+                                                        Lifestyle
+                                                    </a>
+                                                </li>
+                                                <li class="container-lastest__post-desc">
+                                                    29 March 2021
+                                                </li>
+                                            </ul>
+                                            <h3 class="text-hover">Master The Art Of Nature With These 7 Tips</h3>
+                                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings.</p>
+                                            <div class="container-lastest__post-icons">
+                                                <i class="text-hover fal fa-share-alt"></i>
+                                                <i class="text-hover fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-12 c-12 container-lastest__post-item-wrap">
+                                    <div class="container-lastest__post-item">
+                                        <div class="container-lastest__posts-img">
+                                            <span>
+                                                <i class="btn-cricle far fa-video"></i>
+                                            </span>
+                                            <a href="#" class="container-lastest__posts-img-link">
+                                                <div>
+                                                    <img src="./assets/image/latest-sm-3.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="container-lastest__posts-content">
+                                            <ul class="mt-24">
+                                                <li class="container-lastest__post-desc">
+                                                    <img src="./assets/image/author-sm.png" alt="">
+                                                    <a class="text-hover" href="#">
+                                                        Katen Doe
+                                                    </a>
+                                                </li>
+                                                <li class="container-lastest__post-desc">
+                                                    <a class="text-hover" href="#">
+                                                        Fashion
+                                                    </a>
+                                                </li>
+                                                <li class="container-lastest__post-desc">
+                                                    29 March 2021
+                                                </li>
+                                            </ul>
+                                            <h3 class="text-hover">Facts About Business That Will Help You Success</h3>
+                                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings.</p>
+                                            <div class="container-lastest__post-icons">
+                                                <i class="text-hover fal fa-share-alt"></i>
+                                                <i class="text-hover fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-12 c-12 container-lastest__post-item-wrap">
+                                    <div class="container-lastest__post-item">
+                                        <div class="container-lastest__posts-img">
+                                            <span>
+                                                <i class="btn-cricle fal fa-image"></i>
+                                            </span>
+                                            <a href="#" class="container-lastest__posts-img-link">
+                                                <div>
+                                                    <img src="./assets/image/latest-sm-4.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="container-lastest__posts-content">
+                                            <ul class="mt-24">
+                                                <li class="container-lastest__post-desc">
+                                                    <img src="./assets/image/author-sm.png" alt="">
+                                                    <a class="text-hover" href="#">
+                                                        Katen Doe
+                                                    </a>
+                                                </li>
+                                                <li class="container-lastest__post-desc">
+                                                    <a class="text-hover" href="#">
+                                                        Politic
+                                                    </a>
+                                                </li>
+                                                <li class="container-lastest__post-desc">
+                                                    29 March 2021
+                                                </li>
+                                            </ul>
+                                            <h3 class="text-hover">Your Light Is About To Stop Being Relevant</h3>
+                                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings.</p>
+                                            <div class="container-lastest__post-icons">
+                                                <i class="text-hover fal fa-share-alt"></i>
+                                                <i class="text-hover fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-lastest__posts-loadMore">
+                                <a href="#">Load More</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Right -->
+                    <div class="col l-4 m-12 c-12 container__content-right-wrapper">
+                        <!-- Intro -->
+                        <div class="setupRight text-center">
+                            <div class="container-right__intro">
+                                <img src="./assets/image/logo.svg" alt="">
+                                <span>Hello, We’re content writer who is fascinated by content fashion, celebrity and
+                                lifestyle. We helps clients bring the right content to the right people.</span>
+                                <ul class="list-socials">
+                                    <li class="social-item">
+                                        <a href="#" class="social-link">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="#" class="social-link">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="#" class="social-link">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="#" class="social-link">
+                                            <i class="fab fa-pinterest-p"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="#" class="social-link">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="#" class="social-link">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Popular posts -->
+                        <div class="container-right__posts-popular">
+                            <div class="setupRight">
+                                <div class="container-right__posts-title text-center">
+                                    <h3>Popular Posts</h3>
+                                    <img src="./assets/image/wave.svg" alt="">
+                                </div>
+                                <div class="container-right__posts-list">
+                                    <div style="margin-top: 0;" class="container__intro-right-item">
+                                        <a href="#" class="container__intro-right-img">
+                                            <img src="./assets/image/tabs-1.jpg" alt="">
+                                            <span>1</span>
+                                        </a>
+                                        <div class="container__intro-right-item-info">
+                                            <h2 class="container__intro-right-title">
+                                                <a class="text-hover" href="#">3 Easy Ways To Make Your iPhone Faster</a>
+                                            </h2>
+                                            <span>29 March 2021</span>
+                                        </div>
+                                    </div>
+                                    <div class="container__intro-right-item">
+                                        <a href="#" class="container__intro-right-img">
+                                            <img src="./assets/image/tabs-2.jpg" alt="">
+                                            <span>2</span>
+                                        </a>
+                                        <div class="container__intro-right-item-info">
+                                            <h2 class="container__intro-right-title">
+                                                <a class="text-hover" href="#">An Incredibly Easy Method That Works For All</a>
+                                            </h2>
+                                            <span>29 March 2021</span>
+                                        </div>
+                                    </div>
+                                    <div class="container__intro-right-item">
+                                        <a href="#" class="container__intro-right-img">
+                                            <img src="./assets/image/tabs-3.jpg" alt="">
+                                            <span>3</span>
+                                        </a>
+                                        <div class="container__intro-right-item-info">
+                                            <h2 class="container__intro-right-title">
+                                                <a class="text-hover" href="#">10 Ways To Immediately Start Selling Furniture</a>
+                                            </h2>
+                                            <span>29 March 2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Explore topics -->
+                        <div class="container-right__topics">
+                            <div class="setupRight">
+                                <div class="container-right__posts-title text-center">
+                                    <h3>Explore Topics</h3>
+                                    <img src="./assets/image/wave.svg" alt="">
+                                </div>
+                                <ul class="container-right__topics-list">
+                                    <li class="container-right__topic-item">
+                                        <a href="#" class="container-right__topic-link">
+                                            <i class="far fa-chevron-right"></i> Lifestyle
+                                        </a>
+                                        <span>(2)</span>
+                                    </li>
+                                    <li class="container-right__topic-item">
+                                        <a href="#" class="container-right__topic-link">
+                                            <i class="far fa-chevron-right"></i> Inspiration
+                                        </a>
+                                        <span>(5)</span>
+                                    </li>
+                                    <li class="container-right__topic-item">
+                                        <a href="#" class="container-right__topic-link">
+                                            <i class="far fa-chevron-right"></i> Fashion
+                                        </a>
+                                        <span>(4)</span>
+                                    </li>
+                                    <li class="container-right__topic-item">
+                                        <a href="#" class="container-right__topic-link">
+                                            <i class="far fa-chevron-right"></i> Politic
+                                        </a>
+                                        <span>(1)</span>
+                                    </li>
+                                    <li class="container-right__topic-item">
+                                        <a href="#" class="container-right__topic-link">
+                                            <i class="far fa-chevron-right"></i> Trending
+                                        </a>
+                                        <span>(7)</span>
+                                    </li>
+                                    <li class="container-right__topic-item">
+                                        <a href="#" class="container-right__topic-link">
+                                            <i class="far fa-chevron-right"></i> Culture
+                                        </a>
+                                        <span>(3)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- News letter -->
+                        <div class="container-right__newsletter text-center">
+                            <div class="setupRight">
+                                <div class="container-right__posts-title text-center">
+                                    <h3>Newsletter</h3>
+                                    <img src="./assets/image/wave.svg" alt="">
+                                </div>
+                                <p class="container-right__newsletter-desc">Join 70,000 subscribers!</p>
+                                <form action="">
+                                    <input type="email" required placeholder="Email address..." class="container-right__newsletter-input">
+                                    <input type="submit" value="Sign Up" class="btn-default container-right__newsletter-submit">
+                                </form>
+                                <span class="container-right__newsletter-policy">
+                                    By signing up, you agree to our
+                                    <a href="#">Privacy Policy</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Celebration -->
+                        <div class="container-right__celebration">
+                            <div class="setupRight">
+                                <div class="container-right__posts-title text-center">
+                                    <h3>Celebration</h3>
+                                    <img src="./assets/image/wave.svg" alt="">
+                                </div>
+                                <div class="container-right__celebration-wrap">
+                                    <div class="container-right__celebration-content">
+                                        <div class="container-right__celebration-item">
+                                            <div class="container-right__celebration-img">
+                                                <a href="#">
+                                                    <img src="./assets/image/widget-carousel-1.jpg" alt="">
+                                                </a>
+                                                <span class="btn-default">How to</span>
+                                            </div>
+                                            <h3>Easy Ways You Can Turn Future Into Success</h3>
+                                            <ul class="container-right__celebration-info">
+                                                <li>
+                                                    <a href="#">Katen Doe</a>
+                                                </li>
+                                                <li>
+                                                    29 March 2021
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="container-right__celebration-item">
+                                            <div class="container-right__celebration-img">
+                                                <a href="#">
+                                                    <img src="./assets/image/widget-carousel-2.jpg" alt="">
+                                                </a>
+                                                <span class="btn-default">Trending</span>
+                                            </div>
+                                            <h3>Master The Art OF Nature With These 7 Tips</h3>
+                                            <ul class="container-right__celebration-info">
+                                                <li>
+                                                    <a href="#">Katen Doe</a>
+                                                </li>
+                                                <li>
+                                                    29 March 2021
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="container-right__celebration-item">
+                                            <div class="container-right__celebration-img">
+                                                <a href="#">
+                                                    <img src="./assets/image/widget-carousel-1.jpg" alt="">
+                                                </a>
+                                                <span class="btn-default">Editor's Pick</span>
+                                            </div>
+                                            <h3>Facts About Business That Will Help You Success</h3>
+                                            <ul class="container-right__celebration-info">
+                                                <li>
+                                                    <a href="#">Katen Doe</a>
+                                                </li>
+                                                <li>
+                                                    29 March 2021
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="container-right__celebration-item">
+                                            <div class="container-right__celebration-img">
+                                                <a href="#">
+                                                    <img src="./assets/image/widget-carousel-2.jpg" alt="">
+                                                </a>
+                                                <span class="btn-default">Tags</span>
+                                            </div>
+                                            <h3>Your Light Is About To Stop Being Relevant</h3>
+                                            <ul class="container-right__celebration-info">
+                                                <li>
+                                                    <a href="#">Katen Doe</a>
+                                                </li>
+                                                <li>
+                                                    29 March 2021
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container-right__celebration-btns text-center">
+                                    <button class="container-right__celebration-btn">
+                                        <i class="fal fa-chevron-left"></i>
+                                    </button>
+                                    <button class="container-right__celebration-btn">
+                                        <i class="fal fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SPONSORED ADS -->
+                        <div class="container-right__ads text-center">
+                            <span>- SPONSORED AD -</span>
+                            <a href="#">
+                                <img src="./assets/image/ad-360.png" alt="">
+                            </a>
+                        </div>
+
+                        <!-- Tags Clouds-->
+                        <div class="container-right__tags">
+                            <div class="setupRight">
+                                <div class="container-right__posts-title text-center">
+                                    <h3>Tag Clouds</h3>
+                                    <img src="./assets/image/wave.svg" alt="">
+                                </div>
+                                <div class="container-right__tags-list">
+                                    <a href="#">#Trending</a>
+                                    <a href="#">#Video</a>
+                                    <a href="#">#Featured</a>
+                                    <a href="#">Gallery</a>
+                                    <a href="#">#Celebrities</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- foot container -->
+                <div class="row container-foot__imgs">
+                    <div class="col l-2 m-2 c-6">
+                        <a href="#" class="container-foot__img-link">
+                            <img src="./assets/image/insta-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col l-2 m-2 c-6">
+                        <a href="#" class="container-foot__img-link">
+                            <img src="./assets/image/insta-2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col l-2 m-2 c-6 mt-8">
+                        <a href="#" class="container-foot__img-link">
+                            <img src="./assets/image/insta-3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col l-2 m-2 c-6 mt-8">
+                        <a href="#" class="container-foot__img-link">
+                            <img src="./assets/image/insta-4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col l-2 m-2 c-6 mt-8">
+                        <a href="#" class="container-foot__img-link">
+                            <img src="./assets/image/insta-5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col l-2 m-2 c-6 mt-8">
+                        <a href="#" class="container-foot__img-link">
+                            <img src="./assets/image/insta-6.jpg" alt="">
+                        </a>
+                    </div>
+                    <a href="#" class="container-foot-insta btn-default">
+                        @Kante on Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="footer-wrapper">
+                    <div class="row">
+                        <div class="col l-4 c-12">
+                            <span class="footer-coppyright">© 2021 Katen. Template by Duy</span>
+                        </div>
+                        <div class="col l-4 c-12">
+                            <ul class="list-socials">
+                                <li class="social-item">
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-pinterest-p"></i>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-4 c-12">
+                            <a href="#" class="footer-backTop">
+                                <i class="fal fa-angle-up"></i> Back to Top
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
